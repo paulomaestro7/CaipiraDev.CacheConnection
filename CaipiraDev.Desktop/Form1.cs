@@ -13,7 +13,7 @@ namespace CaipiraDev.Desktop
 
         private void Btn_ConnectRedis_Click(object sender, EventArgs e)
         {
-            new Fmr_Connection().Show();
+            new Fmr_Connection().ShowDialog();
         }
     }
 }

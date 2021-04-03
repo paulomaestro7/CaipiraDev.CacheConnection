@@ -35,7 +35,6 @@ namespace CaipiraDev.Desktop.Forms
             this.Txt_Address = new System.Windows.Forms.TextBox();
             this.Txt_Port = new System.Windows.Forms.TextBox();
             this.Lbl_Port = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Lbl_User = new System.Windows.Forms.Label();
             this.Txt_User = new System.Windows.Forms.TextBox();
             this.Lbl_Password = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@ namespace CaipiraDev.Desktop.Forms
             this.Btn_Cancel = new System.Windows.Forms.Button();
             this.Btn_Ok = new System.Windows.Forms.Button();
             this.Btn_Test = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // Txt_Name
@@ -94,15 +94,6 @@ namespace CaipiraDev.Desktop.Forms
             this.Lbl_Port.TabIndex = 5;
             this.Lbl_Port.Text = ":";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(828, 222);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(10, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = ":";
-            // 
             // Lbl_User
             // 
             this.Lbl_User.AutoSize = true;
@@ -134,6 +125,7 @@ namespace CaipiraDev.Desktop.Forms
             this.Txt_Password.Name = "Txt_Password";
             this.Txt_Password.Size = new System.Drawing.Size(461, 23);
             this.Txt_Password.TabIndex = 9;
+            this.Txt_Password.UseSystemPasswordChar = true;
             // 
             // Chk_Password
             // 
@@ -144,6 +136,7 @@ namespace CaipiraDev.Desktop.Forms
             this.Chk_Password.TabIndex = 11;
             this.Chk_Password.Text = "Show password";
             this.Chk_Password.UseVisualStyleBackColor = true;
+            this.Chk_Password.CheckedChanged += new System.EventHandler(this.Chk_Password_CheckedChanged);
             // 
             // Btn_Cancel
             // 
@@ -153,6 +146,7 @@ namespace CaipiraDev.Desktop.Forms
             this.Btn_Cancel.TabIndex = 12;
             this.Btn_Cancel.Text = "Cancel";
             this.Btn_Cancel.UseVisualStyleBackColor = true;
+            this.Btn_Cancel.Click += new System.EventHandler(this.Btn_Cancel_Click);
             // 
             // Btn_Ok
             // 
@@ -172,10 +166,19 @@ namespace CaipiraDev.Desktop.Forms
             this.Btn_Test.Text = "Test Connection";
             this.Btn_Test.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(809, 279);
+            this.panel1.TabIndex = 15;
+            // 
             // Fmr_Connection
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(833, 303);
             this.Controls.Add(this.Btn_Test);
             this.Controls.Add(this.Btn_Ok);
@@ -183,7 +186,6 @@ namespace CaipiraDev.Desktop.Forms
             this.Controls.Add(this.Chk_Password);
             this.Controls.Add(this.Lbl_Password);
             this.Controls.Add(this.Txt_Password);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_User);
             this.Controls.Add(this.Txt_User);
             this.Controls.Add(this.Lbl_Port);
@@ -192,9 +194,14 @@ namespace CaipiraDev.Desktop.Forms
             this.Controls.Add(this.Txt_Address);
             this.Controls.Add(this.Lbl_Name);
             this.Controls.Add(this.Txt_Name);
+            this.Controls.Add(this.panel1);
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Fmr_Connection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connection Settings";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,7 +215,6 @@ namespace CaipiraDev.Desktop.Forms
         private System.Windows.Forms.TextBox Txt_Address;
         private System.Windows.Forms.TextBox Txt_Port;
         private System.Windows.Forms.Label Lbl_Port;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Lbl_User;
         private System.Windows.Forms.TextBox Txt_User;
         private System.Windows.Forms.Label Lbl_Password;
@@ -217,5 +223,6 @@ namespace CaipiraDev.Desktop.Forms
         private System.Windows.Forms.Button Btn_Cancel;
         private System.Windows.Forms.Button Btn_Ok;
         private System.Windows.Forms.Button Btn_Test;
+        private System.Windows.Forms.Panel panel1;
     }
 }
