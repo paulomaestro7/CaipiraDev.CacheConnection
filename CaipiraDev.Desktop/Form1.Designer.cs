@@ -1,7 +1,7 @@
 ﻿
 namespace CaipiraDev.Desktop
 {
-    partial class Form1
+    partial class Fmr_View
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,13 +29,36 @@ namespace CaipiraDev.Desktop
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Btn_ConnectRedis = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Btn_ConnectRedis
+            // 
+            this.Btn_ConnectRedis.Location = new System.Drawing.Point(2, 4);
+            this.Btn_ConnectRedis.Name = "Btn_ConnectRedis";
+            this.Btn_ConnectRedis.Size = new System.Drawing.Size(305, 23);
+            this.Btn_ConnectRedis.TabIndex = 0;
+            this.Btn_ConnectRedis.Text = "+ Connect Redis Server";
+            this.Btn_ConnectRedis.UseVisualStyleBackColor = true;
+            this.Btn_ConnectRedis.Click += new System.EventHandler(this.Btn_ConnectRedis_Click);
+            // 
+            // Fmr_View
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1122, 623);
+            this.Controls.Add(this.Btn_ConnectRedis);
+            this.Name = "Fmr_View";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cache Redis";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Btn_ConnectRedis;
     }
 }
 

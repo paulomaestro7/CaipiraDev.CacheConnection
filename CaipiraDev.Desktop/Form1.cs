@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CaipiraDev.Desktop.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +11,16 @@ using System.Windows.Forms;
 
 namespace CaipiraDev.Desktop
 {
-    public partial class Form1 : Form
+    public partial class Fmr_View : Form
     {
-        public Form1()
+        public Fmr_View()
         {
             InitializeComponent();
         }
 
+        private void Btn_ConnectRedis_Click(object sender, EventArgs e)
+        {
+            new Fmr_Connection().Show();
+        }
     }
 }
