@@ -11,14 +11,15 @@ namespace CaipiraDev.CacheConnection.Controller
         public int ConnectionStringPort { private get; set; }
         public string User { private get; set; }
         public string Password { private get; set; }
-        
+
         public void CacheConnection()
         {
             Connection = ConnectionMultiplexer.Connect(new ConfigurationOptions()
             {
                 User = User,
                 Password = Password,
-                EndPoints = { { ConnectionString, ConnectionStringPort } }
+                EndPoints = { { ConnectionString, ConnectionStringPort } },
+                Ssl = true
             });
         }
     }

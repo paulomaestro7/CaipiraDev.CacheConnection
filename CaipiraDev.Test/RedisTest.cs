@@ -27,7 +27,7 @@ namespace CaipiraDev.Test
         private void CacheSettings()
         {
             _iCacheConnection.ConnectionString = "";
-            _iCacheConnection.ConnectionStringPort = 0;
+            _iCacheConnection.ConnectionStringPort = 6380;
             _iCacheConnection.User = "";
             _iCacheConnection.Password = "";
         }

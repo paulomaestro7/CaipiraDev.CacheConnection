@@ -84,6 +84,8 @@ namespace CaipiraDev.Desktop.Forms
             this.Txt_Port.Name = "Txt_Port";
             this.Txt_Port.Size = new System.Drawing.Size(107, 23);
             this.Txt_Port.TabIndex = 4;
+            this.Txt_Port.Text = "6380";
+            this.Txt_Port.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Port_KeyPress);
             // 
             // Lbl_Port
             // 
@@ -165,6 +167,7 @@ namespace CaipiraDev.Desktop.Forms
             this.Btn_Test.TabIndex = 14;
             this.Btn_Test.Text = "Test Connection";
             this.Btn_Test.UseVisualStyleBackColor = true;
+            this.Btn_Test.Click += new System.EventHandler(this.Btn_Test_Click);
             // 
             // panel1
             // 
