@@ -36,6 +36,12 @@ namespace CaipiraDev.Desktop.Forms
 
         private void Btn_Test_Click(object sender, System.EventArgs e)
         {
+            if (string.IsNullOrEmpty(Txt_Address.Text) || string.IsNullOrEmpty(Txt_Port.Text)
+                || string.IsNullOrEmpty(Txt_Password.Text))
+            {
+                MessageBox.Show(string.Format(MessageDefault.TestConnectionFail, "requeired fields"));
+                return;
+            }
             _iCacheConnection.ConnectionString = Txt_Address.Text;
             _iCacheConnection.ConnectionStringPort = int.Parse(Txt_Port.Text);
             _iCacheConnection.User = Txt_User.Text;
