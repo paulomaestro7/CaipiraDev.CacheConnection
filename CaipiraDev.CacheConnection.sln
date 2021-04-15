@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaipiraDev.CacheConnection"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaipiraDev.Desktop", "CaipiraDev.Desktop\CaipiraDev.Desktop.csproj", "{59CAF94C-87D0-44B0-815D-8C467FB37B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaipiraDev.Test", "CaipiraDev.Test\CaipiraDev.Test.csproj", "{D6CB9EA4-4DDA-4219-81D7-967223579B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaipiraDev.Test", "CaipiraDev.Test\CaipiraDev.Test.csproj", "{D6CB9EA4-4DDA-4219-81D7-967223579B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaipiraDev.Util", "CaipiraDev.Util\CaipiraDev.Util.csproj", "{830CE8A5-5FF4-4D76-B002-CA8372A6C6F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaipiraDev.Util", "CaipiraDev.Util\CaipiraDev.Util.csproj", "{830CE8A5-5FF4-4D76-B002-CA8372A6C6F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaipiraDev.Model", "CaipiraDev.Model\CaipiraDev.Model.csproj", "{3A26591E-7CFE-47C1-8415-C76F8A0D5177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaipiraDev.Repository", "CaipiraDev.Repository\CaipiraDev.Repository.csproj", "{9999FF26-CCF7-4ACA-BDBF-973B7F829AC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{830CE8A5-5FF4-4D76-B002-CA8372A6C6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{830CE8A5-5FF4-4D76-B002-CA8372A6C6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{830CE8A5-5FF4-4D76-B002-CA8372A6C6F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A26591E-7CFE-47C1-8415-C76F8A0D5177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A26591E-7CFE-47C1-8415-C76F8A0D5177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A26591E-7CFE-47C1-8415-C76F8A0D5177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A26591E-7CFE-47C1-8415-C76F8A0D5177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9999FF26-CCF7-4ACA-BDBF-973B7F829AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9999FF26-CCF7-4ACA-BDBF-973B7F829AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9999FF26-CCF7-4ACA-BDBF-973B7F829AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9999FF26-CCF7-4ACA-BDBF-973B7F829AC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -30,6 +30,7 @@ namespace CaipiraDev.Desktop
         private void InitializeComponent()
         {
             this.Btn_ConnectRedis = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Btn_ConnectRedis
@@ -42,23 +43,35 @@ namespace CaipiraDev.Desktop
             this.Btn_ConnectRedis.UseVisualStyleBackColor = true;
             this.Btn_ConnectRedis.Click += new System.EventHandler(this.Btn_ConnectRedis_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(2, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
             // Fmr_View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1122, 623);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn_ConnectRedis);
             this.Name = "Fmr_View";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cache Redis";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button Btn_ConnectRedis;
+        private System.Windows.Forms.Label label1;
     }
 }
 

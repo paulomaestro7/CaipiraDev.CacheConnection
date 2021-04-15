@@ -1,6 +1,7 @@
 using CaipiraDev.CacheConnection.Controller.Interface;
 using NUnit.Framework;
 using System;
+using System.Linq;
 
 namespace CaipiraDev.Test
 {
@@ -21,6 +22,29 @@ namespace CaipiraDev.Test
         {
             CacheSettings();
             _iCacheConnection.CacheConnection();
+            Assert.IsTrue(_iCacheConnection.Connection.IsConnected);
+        }
+
+        [Test]
+        public void Connection_Test_Error()
+        {
+            CacheSettings();
+            _iCacheConnection.Password = "error";
+            _iCacheConnection.CacheConnection();
+            Assert.IsTrue(!_iCacheConnection.Connection.IsConnected);
+        }
+
+        [Test]
+        public void Connection_List_Ok()
+        {
+            CacheSettings();
+            _iCacheConnection.CacheConnection();
+            //var teste = _iCacheConnection.Connection.GetServer(_iCacheConnection.Connection.GetEndPoints()[0]).Keys();
+            //teste.Any()
+            //foreach (var key in teste)
+            //{
+            //    Console.WriteLine(key);
+            //}
             Assert.IsTrue(_iCacheConnection.Connection.IsConnected);
         }
 

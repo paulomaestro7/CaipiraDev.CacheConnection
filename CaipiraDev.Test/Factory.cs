@@ -1,4 +1,8 @@
 ﻿using CaipiraDev.CacheConnection.Configuration;
+using CaipiraDev.Model;
+using CaipiraDev.Repository;
+using CaipiraDev.Repository.Configuration;
+using CaipiraDev.Repository.Interface;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -10,6 +14,7 @@ namespace CaipiraDev.Test
         {
             var services = new ServiceCollection();
             services.CacheConnection();
+            services.Repository();
             service = services.BuildServiceProvider();
         }
     }

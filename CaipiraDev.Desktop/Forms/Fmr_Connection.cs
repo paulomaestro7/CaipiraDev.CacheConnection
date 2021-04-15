@@ -13,6 +13,7 @@ namespace CaipiraDev.Desktop.Forms
             InitializeComponent();
         }
 
+        #region Events
         private void Chk_Password_CheckedChanged(object sender, System.EventArgs e)
         {
             if (Chk_Password.Checked)
@@ -21,10 +22,7 @@ namespace CaipiraDev.Desktop.Forms
                 Txt_Password.UseSystemPasswordChar = true;
         }
 
-        private void Btn_Cancel_Click(object sender, System.EventArgs e)
-        {
-            this.Close();
-        }
+
 
         private void Txt_Port_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -34,6 +32,17 @@ namespace CaipiraDev.Desktop.Forms
             }
         }
 
+        #endregion Events 
+
+        #region Buttons   
+        private void Btn_Ok_Click(object sender, System.EventArgs e)
+        {
+
+        }
+        private void Btn_Cancel_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
         private void Btn_Test_Click(object sender, System.EventArgs e)
         {
             if (string.IsNullOrEmpty(Txt_Address.Text) || string.IsNullOrEmpty(Txt_Port.Text)
@@ -50,5 +59,6 @@ namespace CaipiraDev.Desktop.Forms
             if (_iCacheConnection.Connection.IsConnected)
                 MessageBox.Show(string.Format(MessageDefault.TestConnectionOk, Txt_Name.Text));
         }
+        #endregion Buttons
     }
 }

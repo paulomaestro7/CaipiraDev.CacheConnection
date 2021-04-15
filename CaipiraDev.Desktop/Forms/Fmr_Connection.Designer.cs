@@ -158,6 +158,7 @@ namespace CaipiraDev.Desktop.Forms
             this.Btn_Ok.TabIndex = 13;
             this.Btn_Ok.Text = "Ok";
             this.Btn_Ok.UseVisualStyleBackColor = true;
+            this.Btn_Ok.Click += new System.EventHandler(this.Btn_Ok_Click);
             // 
             // Btn_Test
             // 
